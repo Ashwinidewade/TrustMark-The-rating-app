@@ -1,0 +1,184 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+/* TrustPilot inspired styles */
+:root {
+  --trustpilot-green: #00b67a;
+  --trustpilot-dark: #2d2d2d;
+  --trustpilot-light: #f8f8f8;
+  --trustpilot-border: #e4e4e4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--trustpilot-dark);
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: var(--trustpilot-green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #009e68;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--trustpilot-dark);
+  border: 1px solid var(--trustpilot-border);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--trustpilot-light);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--trustpilot-border);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--trustpilot-green);
+}
+
+.error-message {
+  color: #d93025;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: var(--trustpilot-green);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  border-bottom: 1px solid var(--trustpilot-border);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--trustpilot-dark);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--trustpilot-border);
+}
+
+.table th {
+  font-weight: 600;
+  background-color: var(--trustpilot-light);
+  cursor: pointer;
+}
+
+.table th:hover {
+  background-color: #e8e8e8;
+}
+
+.table tr:hover {
+  background-color: var(--trustpilot-light);
+}
+
+.rating-stars {
+  color: var(--trustpilot-green);
+  font-weight: 600;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid var(--trustpilot-border);
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: var(--trustpilot-green);
+  color: white;
+  border-color: var(--trustpilot-green);
+}
+
+.pagination button:hover:not(.active) {
+  background-color: var(--trustpilot-light);
+}

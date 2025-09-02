@@ -1,0 +1,115 @@
+/* ================================
+   Rating Form Styles
+   ================================ */
+
+.rating-form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rating-form-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+/* ===== Star Rating ===== */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 2rem;
+  color: #d1d5db;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.star.selected,
+.star:hover {
+  color: #fbbf24;
+  transform: scale(1.1);
+}
+
+/* ===== Input & Textarea ===== */
+.rating-form-container input,
+.rating-form-container textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.rating-form-container input:focus,
+.rating-form-container textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+.rating-form-container textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* ===== Submit Button ===== */
+.rating-form-container button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.rating-form-container button:hover {
+  background: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+/* ===== Success Message ===== */
+.success-message {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16a34a;
+  margin-top: 1rem;
+}
+
+/* ===== Error Message ===== */
+.error-message {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #dc2626;
+  margin-top: 0.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .rating-form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .star {
+    font-size: 1.6rem;
+  }
+}

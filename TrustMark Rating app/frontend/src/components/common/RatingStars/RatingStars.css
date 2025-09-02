@@ -1,0 +1,38 @@
+.rating-stars-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star {
+  color: #ddd;
+  cursor: default;
+  font-size: 16px;
+}
+
+.star.small {
+  font-size: 14px;
+}
+
+.star.large {
+  font-size: 24px;
+}
+
+.star.filled {
+  color: var(--trustpilot-green);
+}
+
+.star.editable {
+  cursor: pointer;
+}
+
+.star.editable:hover {
+  color: var(--trustpilot-green);
+  opacity: 0.7;
+}
+
+.rating-text {
+  margin-left: 8px;
+  font-weight: 600;
+  color: var(--trustpilot-dark);
+}
